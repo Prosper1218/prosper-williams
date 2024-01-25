@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
+/* @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Nunito+Sans:opsz@6..12&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Montserrat:wght@300&family=Nunito+Sans:opsz@6..12&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Lilita+One&family=Montserrat:wght@300&family=Nunito+Sans:opsz@6..12&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Josefin+,Sans:wght@600&family=Lilita+One&family=Montserrat:wght@300&family=Nunito+Sans:opsz@6..12&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Cinzel:wght@500&family=Josefin+Sans:wght@600&family=Lilita+One&family=Montserrat:wght@300&family=Nunito+Sans:opsz@6..12&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -56,4 +62,124 @@ body {
 
 .font {
    font-family: "Josefin Sans", sans-serif;
+}
+.nav-active {
+   background-color: brown;
+}
+
+
+
+.rubik {
+   font-family: "Nunito Sans", sans-serif;
+}
+
+.lpb {
+   font-family: "Cinzel", serif;
+   word-spacing: 2px;
+}
+.cinzel {
+   font-family: "Cinzel", serif;
+}
+
+/* .link:hover {
+   scale: ;
+} */
+.link {
+   transition: ease-in-out 0.2s;
+}
+
+.pp {
+   display: block;
+   margin-block-start: 1em;
+   margin-block-end: 1em;
+   margin-inline-start: 0px;
+   margin-inline-end: 0px;
+}
+
+.animation {
+   height: 50px;
+   overflow: hidden;
+}
+
+.animation > div > div {
+   display: inline-block;
+   transition: ease-in-out 2s;
+}
+
+.animation div:first-child {
+   animation: text-animation 16s ease-in-out infinite;
+}
+
+@keyframes text-animation {
+   0% {
+      margin-top: 0rem;
+   }
+   5% {
+      margin-top: 0rem;
+   }
+   10% {
+      margin-top: -3rem;
+   }
+   15% {
+      margin-top: -3rem;
+   }
+   20% {
+      margin-top: -6rem;
+   }
+   25% {
+      margin-top: -6rem;
+   }
+   30% {
+      margin-top: -9rem;
+   }
+   35% {
+      margin-top: -9rem;
+   }
+   40% {
+      margin-top: -12rem;
+   }
+   45% {
+      margin-top: -12rem;
+   }
+   50% {
+      margin-top: -12rem;
+   }
+
+   55% {
+      margin-top: -12rem;
+   }
+
+   60% {
+      margin-top: -12rem;
+   }
+   65% {
+      margin-top: -9rem;
+   }
+   70% {
+      margin-top: -9rem;
+   }
+   75% {
+      margin-top: -6rem;
+   }
+   80% {
+      margin-top: -6rem;
+   }
+   85% {
+      margin-top: -3rem;
+   }
+   90% {
+      margin-top: -3rem;
+   }
+   95% {
+      margin-top: 0rem;
+   }
+   100% {
+      margin-top: 0rem;
+   }
+}
+
+
+
+.lilita{
+   font-family: 'Acme', sans-serif;
 }
