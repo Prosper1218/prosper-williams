@@ -5,9 +5,8 @@ import {useNavProvider} from "../../Util/NavBarProvider";
 
 const Nav = () => {
    const {Active, setActive} = useNavProvider();
-   const links = [{name: "Home"}, {name: "About"}, {name: "Work"}, {name: "Contact"}, {name: "Services"}];
+   const links = [{name: "Home", to: "/"}, {name: "About", to: "/About"}, {name: "Work", to: ""}, {name: "Contact"}, {name: "Services"}];
    const [Scrolled1, setScrolled1] = useState(false);
-   const [Scrolled2, setScrolled2] = useState(false);
 
    const handleclick = () => {
       setActive(true);
@@ -16,30 +15,28 @@ const Nav = () => {
    useEffect(() => {
       const handleScroll = () => {
          const scrollTop = window.scrollY;
-         const shouldHaveBackground = scrollTop > 703;
+         const shouldHaveBackground = scrollTop > 703 * 5;
 
          setScrolled1(shouldHaveBackground);
       };
-      const handleScroll2 = () => {
-         const scrollTop = window.scrollY;
-         const shouldHaveBackground = scrollTop > 1406; // Adjust the scroll threshold as needed
-
-         setScrolled2(shouldHaveBackground);
-      };
 
       window.addEventListener("scroll", handleScroll);
-      window.addEventListener("scroll", handleScroll2);
       // Clean up the event listener
       return () => {
          window.removeEventListener("scroll", handleScroll);
-         window.removeEventListener("scroll", handleScroll2);
       };
    }, []);
    return (
-      <div className={`z-40 ${Active ? "overflow-y-hidden" : "max-h-[100vh]"}`}>
+      <div className={`z-40 overflow-x-hidden ${Active ? "overflow-y-hidden" : "max-h-[100vh]"}`}>
          {/* <h1 className="hidden sm:block xl:hidden pl-5">Prosper Williams</h1> */}
          <div className="flex justify-end mr-34">
-            <motion.button className=" rubik tracking-tighter fixed text-white text-3xl font-bold mr-4 mt-2" onClick={handleclick} initial={{opacity: 0}} transition={{duration: 0.4}} animate={{opacity: 1}}>
+            <motion.button
+               className={`rubik tracking-tighter fixed text-white text-3xl font-bold mr-4 mt ${Scrolled1 ? "text-[#f83d0c]" : ""}`}
+               onClick={handleclick}
+               initial={{opacity: 0}}
+               transition={{duration: 0.4}}
+               animate={{opacity: 1}}
+            >
                menu
             </motion.button>
          </div>
@@ -56,7 +53,9 @@ const Nav = () => {
                   return (
                      <div key={link.name} className="h-24 text-white flex flex-col justify-center overflow-hidden">
                         <motion.h1 initial={{y: 70, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: 1.4}}>
-                           <Link className="font-bold text-5xl sm:text-7xl">{link.name}</Link>
+                           <Link className="font-bold text-5xl sm:text-7xl" to={link.to}>
+                              {link.name}
+                           </Link>
                         </motion.h1>
                      </div>
                   );

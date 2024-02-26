@@ -16,7 +16,6 @@ export const Process = [
       id: 3,
       title: "Design & ",
       sub: "Development",
-
       talk: "This is where the magic happens. We've done all the hard work and now it's time to have some fun and bring the ideas to life. This step will vary depending on what your goals are and the services you require. I offer everything from graphic design and identity to web design and development.",
    },
    {

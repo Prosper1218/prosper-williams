@@ -5,6 +5,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Layout from "./Components/Layout/Layout";
 import Home from "./assets/Pages/HOME/Home";
 import NavBarProvider from "./Util/NavBarProvider";
+import About from "./assets/Pages/ABOUT/About";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
    <React.StrictMode>
@@ -13,6 +14,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             <Routes>
                <Route element={<Layout />}>
                   <Route path="/" element={<Home />} />
+                  <Route path="/" element={<About />} />
                </Route>
             </Routes>
          </BrowserRouter>

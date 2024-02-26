@@ -2,23 +2,23 @@ import React, {useState} from "react";
 import {motion} from "framer-motion";
 import {useNavProvider} from "../../../Util/NavBarProvider";
 import {Link} from "react-router-dom";
-import {Process} from "../../../Data,jsx";
+import {Process} from "../../../Data.jsx";
 
 const Works = [
    {
       id: 1,
       name: "Dianne Rusell",
-      to: "",
+      to: "https://dianne.vercel.app/",
    },
    {
       id: 2,
       name: "Linkloom",
-      to: "",
+      to: "https://linkloom-zeta.vercel.app/",
    },
    {
       id: 3,
-      name: "work 3",
-      to: "",
+      name: "Country Rest Api",
+      to: "https://country-rest-api-by-prosper.vercel.app/",
    },
    {
       id: 4,
@@ -30,7 +30,7 @@ const Home = () => {
    const {Active} = useNavProvider();
 
    return (
-      <div className={` ${Active ? " overflow-y-hidden max-h-[100vh]" : ""}`}>
+      <div className={` ${Active ? " overflow-y-hidden max-h-[100vh]" : ""} overflow-x-hidden`}>
          <motion.div className="min-h-[100vh] h-[100vh] flex flex-col justify-end bg-[#f83d0c]" initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 2}}>
             <div className=" ">
                <motion.h2
@@ -69,7 +69,7 @@ const Home = () => {
             </motion.h2>
          </div>
 
-         <div className="min-h-[100vh] h-[100vh] bg-white text-black items-center flex flex-col justify-center px-4  ">
+         {/* <div className="min-h-[100vh] h-[100vh] bg-white text-black items-center flex flex-col justify-center px-4  ">
             <ul className=" list-none uppercase tracking-[-0px] xl:tracking-wide whitespace-normal leading-[120%]  sm:leading-[90%] inline-block indent-[0.2em] lpb text-2xl sm:text-5xl xl:text-5xl font-extrabold ">
                <li className=" pl-4 sm:pl-11  ">Prosper Williams is a </li>
                <li className="  ">developer</li>
@@ -79,7 +79,7 @@ const Home = () => {
                <li className=" pl-4 sm:pl-11  ">curently based in</li>
                <li className=" ">Akwa Ibom, Nigeria.</li>
             </ul>
-         </div>
+         </div> */}
          <div className="min-h-[100vh] h-auto bg-black text-white items-center pb-8 m-0">
             <h2 className="text-white text-2xl sm:text-[3.5rem] lg:text-[9rem] text-center cinzel extrabold  tracking-tighter px-4 leading-[11rem] ">The Process</h2>
 
@@ -97,10 +97,8 @@ const Home = () => {
                })}
             </div>
          </div>
-         <div className=" bg-black min-h-[100vh] h-[100vh] m-0">
-            <h2 className="cinzel text-left pl-4 sm:pl-20 font-bold capitalize text-1xl text-white py-4 border-b-[1px] border-white border-solid">
-               Some of my works
-            </h2>
+         <div className=" bg-black min-h-[100vh] h-[100vh] m-0" id="work">
+            <h2 className="cinzel text-left pl-4 sm:pl-20 font-bold capitalize text-1xl text-white py-4 border-b-[1px] border-white border-solid">Some of my works</h2>
             <ul className="list-non flex flex-col justify-center h-[98vh] cinzel">
                {Works.map((work) => {
                   return (
@@ -108,7 +106,9 @@ const Home = () => {
                         key={work.id}
                         className="text-white text-5xl sm:text-7xl border-b-[1px] border-b-white border-solid  pl-4 sm:pl-20 h-[22vh] tracking-tight  flex flex-col justify-center overflow-hidden"
                      >
-                        <Link className=" hover:text-[3.2rem]  sm:hover:text-[4.6rem] font-bold transition-all"> {work.name}</Link>
+                        <Link className=" hover:text-[3.2rem]  sm:hover:text-[4.6rem] font-bold transition-all" to={work.to} target="blank">
+                           {work.name}
+                        </Link>
                      </li>
                   );
                })}
@@ -116,7 +116,7 @@ const Home = () => {
          </div>
 
          {/*  */}
-         <div className="min-h-[100vh] h-[96vh] bg-white text-black relative ">
+         <div className="min-h-[100vh] h-[96vh] bg-white text-black ">
             <section className="animation  mt-7 h-auto font-extrabold">
                <div className="first  flex flex-col justify-center h-full">
                   <h3 className="text-2xl cinzel font-bold px-4 sm:px-20 py-1">have a question?</h3>
@@ -150,7 +150,6 @@ const Home = () => {
 
             </div> */}
          </div>
-
       </div>
    );
 };
