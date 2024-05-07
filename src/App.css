@@ -3,7 +3,7 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Nunito+Sans:opsz@6..12&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Montserrat:wght@300&family=Nunito+Sans:opsz@6..12&display=swap");
 /* @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Lilita+One&family=Montserrat:wght@300&family=Nunito+Sans:opsz@6..12&display=swap"); */
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Josefin+,Sans:wght@600&family=Lilita+One&family=Montserrat:wght@300&family=Nunito+Sans:opsz@6..12&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Josefin+,Sans:wght@600&family=Lilita+One&family=Montserrat:wght@300&family=Nunito+Sans:opsz@6..12&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Acme&family=Cinzel:wght@500&family=Josefin+Sans:wght@600&family=Lilita+One&family=Montserrat:wght@300&family=Nunito+Sans:opsz@6..12&display=swap");
 
 @tailwind base;
@@ -66,8 +66,6 @@ body {
 .nav-active {
    background-color: brown;
 }
-
-
 
 .rubik {
    font-family: "Nunito Sans", sans-serif;
@@ -178,8 +176,12 @@ body {
    }
 }
 
+.lilita {
+   font-family: "Acme", sans-serif;
+}
 
+.hel {
+   /* filter: drop-shadow(2px 2px 4em #61dafbaa); */
+   text-shadow: horizontal-offset vertical-offset blur-radius color;
 
-.lilita{
-   font-family: 'Acme', sans-serif;
 }
