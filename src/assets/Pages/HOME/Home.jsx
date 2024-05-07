@@ -116,7 +116,7 @@ const Home = () => {
          </div>
 
          {/*  */}
-         <div className="min-h-[100vh] h-[96vh] bg-white text-black ">
+         <div className="min-h-[80vh] h-[70vh] bg-white text-black ">
             <section className="animation  mt-7 h-auto font-extrabold">
                <div className="first  flex flex-col justify-center h-full">
                   <h3 className="text-2xl cinzel font-bold px-4 sm:px-20 py-1">have a question?</h3>
@@ -138,17 +138,16 @@ const Home = () => {
                </div>
             </section>
 
-            <p className="font capitalize px-4 sm:px-20 text-[1.5rem] pt-60 ">just say</p>
-            <a
-               className="text-[2rem] sm:text-[2.5rem] md:text-[3rem] lg:text-[4.5rem] xl:text-[5.8rem] 2xl:text-[7rem] cursor-pointer  font-extrabold text-left px-4 sm:px-20 "
-               href="https://mail.google.com/mail/u/0/#inbox?compose=new"
-               target="blank"
-            >
-               hello@<span className="text-gray-300 lilita">wprosper92@gmail.com</span>
-            </a>
-            {/* <div className="min-h-[8vh] bg-black absolute top-3">
-
-            </div> */}
+            <div className="border h-full mt-4 flex flex-col justify-center">
+               <p className="font capitalize px-4 sm:px-16 text-[1.5rem] ">just say</p>
+               <a
+                  className="text-[1.5rem] sm:text-[2.5rem] md:text-[3rem] lg:text-[4.5rem] xl:text-[5.8rem] 2xl:text-[7rem] cursor-pointer  font-extrabold text-left px-4 sm:px-20 "
+                  href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsLPtkMkPrTWjrggBBtMMjbSZRfQbcpzmXQnNbGRtthpKCTjJFjcxgtpTBhmtXSPTCRzGzqg"
+                  target="blank"
+               >
+                  hello@<span className="text-gray-300 lilita">wprosper92@gmail.com</span>
+               </a>
+            </div>
          </div>
       </div>
    );
