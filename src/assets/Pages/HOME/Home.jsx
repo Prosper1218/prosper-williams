@@ -31,7 +31,7 @@ const Home = () => {
 
    return (
       <div className={` ${Active ? " overflow-y-hidden max-h-[100vh]" : ""} overflow-x-hidden`}>
-         <motion.div className="min-h-[100vh] h-[100vh] flex flex-col justify-end bg-[#f83d0c]" initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 2}}>
+         <motion.div className="min-h-[100vh] h-[100vh] flex flex-col justify-end bg-[#EF0107]" initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 2}}>
             <div className=" ">
                <motion.h2
                   className={`text-white text-4xl sm:text-6xl cinzel font-semibold sm:ml-20 tracking-tight block ml-8 z-20 h-56`}
@@ -45,7 +45,7 @@ const Home = () => {
             </div>
          </motion.div>
 
-         <div className="min-h-[100vh] h-[100vh] bg-black text-white flex flex-col justify-center">
+         <div className="min-h-[100vh] h-[100vh] bg-[#121212] text-white flex flex-col justify-center">
             <motion.h2
                className="cinzel text-center font-bold capitalize text-4xl md:text-7xl mx-4"
                initial={{opacity: 0, y: 100}}
@@ -57,7 +57,7 @@ const Home = () => {
             </motion.h2>
          </div>
 
-         <div className="h-[100vh] bg-[#f83d0c] flex flex-col justify-center text-white">
+         <div className="h-[100vh] bg-[#EF0107] flex flex-col justify-center text-white">
             <motion.h2
                className="cinzel text-center font-bold capitalize text-4xl md:text-7xl mx-4"
                initial={{opacity: 0, y: 100}}
@@ -138,10 +138,10 @@ const Home = () => {
                </div>
             </section>
 
-            <div className="border h-full mt-4 flex flex-col justify-center">
+            <div className="h-full mt-4 flex flex-col justify-center">
                <p className="font capitalize px-4 sm:px-16 text-[1.5rem] ">just say</p>
                <a
-                  className="text-[1.5rem] sm:text-[2.5rem] md:text-[3rem] lg:text-[4.5rem] xl:text-[5.8rem] 2xl:text-[7rem] cursor-pointer  font-extrabold text-left px-4 sm:px-20 "
+                  className="text-[1.8rem] sm:text-[2.5rem] md:text-[3rem] lg:text-[4.5rem] xl:text-[5.8rem] 2xl:text-[7rem] cursor-pointer  font-extrabold text-left px-4 sm:px-20 "
                   href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsLPtkMkPrTWjrggBBtMMjbSZRfQbcpzmXQnNbGRtthpKCTjJFjcxgtpTBhmtXSPTCRzGzqg"
                   target="blank"
                >
