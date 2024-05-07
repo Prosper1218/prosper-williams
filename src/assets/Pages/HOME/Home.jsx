@@ -31,7 +31,7 @@ const Home = () => {
 
    return (
       <div className={` ${Active ? " overflow-y-hidden max-h-[100vh]" : ""} overflow-x-hidden`}>
-         <motion.div className="min-h-[100vh] h-[100vh] flex flex-col justify-end bg-[#EF0107]" initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 2}}>
+         <motion.div className="min-h-[100vh] h-[100vh] flex flex-col justify-end bg-[#AA0000]" initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 2}}>
             <div className=" ">
                <motion.h2
                   className={`text-white text-4xl sm:text-6xl cinzel font-semibold sm:ml-20 tracking-tight block ml-8 z-20 h-56`}
@@ -45,7 +45,7 @@ const Home = () => {
             </div>
          </motion.div>
 
-         <div className="min-h-[100vh] h-[100vh] bg-[#121212] text-white flex flex-col justify-center">
+         <div className="min-h-[100vh] h-[100vh] bg-[#0B1215] text-white flex flex-col justify-center">
             <motion.h2
                className="cinzel text-center font-bold capitalize text-4xl md:text-7xl mx-4"
                initial={{opacity: 0, y: 100}}
@@ -57,7 +57,7 @@ const Home = () => {
             </motion.h2>
          </div>
 
-         <div className="h-[100vh] bg-[#EF0107] flex flex-col justify-center text-white">
+         <div className="h-[100vh] bg-[#AA0000] flex flex-col justify-center text-white">
             <motion.h2
                className="cinzel text-center font-bold capitalize text-4xl md:text-7xl mx-4"
                initial={{opacity: 0, y: 100}}
@@ -80,7 +80,7 @@ const Home = () => {
                <li className=" ">Akwa Ibom, Nigeria.</li>
             </ul>
          </div> */}
-         <div className="min-h-[100vh] h-auto bg-black text-white items-center pb-8 m-0">
+         <div className="min-h-[100vh] h-auto bg-[#0B1215] text-white items-center pb-8 m-0">
             <h2 className="text-white text-2xl sm:text-[3.5rem] lg:text-[9rem] text-center cinzel extrabold  tracking-tighter px-4 leading-[11rem] ">The Process</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 px-4 items-start gap-8 md:px-10 lg:px-20">
@@ -97,7 +97,7 @@ const Home = () => {
                })}
             </div>
          </div>
-         <div className=" bg-black min-h-[100vh] h-[100vh] m-0" id="work">
+         <div className=" bg-[#0B1215] min-h-[100vh] h-[100vh] m-0" id="work">
             <h2 className="cinzel text-left pl-4 sm:pl-20 font-bold capitalize text-1xl text-white py-4 border-b-[1px] border-white border-solid">Some of my works</h2>
             <ul className="list-non flex flex-col justify-center h-[98vh] cinzel">
                {Works.map((work) => {
