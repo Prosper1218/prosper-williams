@@ -3,6 +3,7 @@ import {motion} from "framer-motion";
 import {useNavProvider} from "../../../Util/NavBarProvider";
 import {Link} from "react-router-dom";
 import {Process} from "../../../Data.jsx";
+import '../../../index.css'
 
 const Works = [
    {
@@ -15,15 +16,16 @@ const Works = [
       name: "Linkloom",
       to: "https://linkloom-zeta.vercel.app/",
    },
+
    {
       id: 3,
-      name: "Country Rest Api",
-      to: "https://country-rest-api-by-prosper.vercel.app/",
+      name: "KryptHQ",
+      to: "https://krypthqt.vercel.app",
    },
    {
       id: 4,
-      name: "work 4",
-      to: "",
+      name: "Country Rest Api",
+      to: "https://country-rest-api-by-prosper.vercel.app/",
    },
 ];
 const Home = () => {
@@ -34,7 +36,7 @@ const Home = () => {
          <motion.div className="min-h-[100vh] h-[100vh] flex flex-col justify-end bg-[#AA0000]" initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 2}}>
             <div className=" ">
                <motion.h2
-                  className={`text-white text-4xl sm:text-6xl cinzel font-semibold sm:ml-20 tracking-tight block ml-8 z-20 h-56`}
+                  className={`text-white text-4xl sm:text-6xl sora font-semibold sm:ml-20 tracking-tight block ml-8 z-20 h-56`}
                   initial={{y: 140, opacity: 0}}
                   animate={{y: 0, opacity: 1}}
                   transition={{duration: 1.5, delay: 0.5}}
@@ -47,7 +49,7 @@ const Home = () => {
 
          <div className="min-h-[100vh] h-[100vh] bg-[#0B1215] text-white flex flex-col justify-center">
             <motion.h2
-               className="cinzel text-center font-bold capitalize text-4xl md:text-7xl mx-4"
+               className="sora text-center font-bold capitalize text-4xl md:text-7xl mx-4"
                initial={{opacity: 0, y: 100}}
                whileInView={{opacity: 1, y: 0}}
                transition={{duration: 2.3}}
@@ -59,7 +61,7 @@ const Home = () => {
 
          <div className="h-[100vh] bg-[#AA0000] flex flex-col justify-center text-white">
             <motion.h2
-               className="cinzel text-center font-bold capitalize text-4xl md:text-7xl mx-4"
+               className="sora text-center font-bold capitalize text-4xl md:text-7xl mx-4"
                initial={{opacity: 0, y: 100}}
                whileInView={{opacity: 1, y: 0}}
                transition={{duration: 2.3}}
@@ -68,18 +70,6 @@ const Home = () => {
                <p className=" rotate-90 "> :)</p>
             </motion.h2>
          </div>
-
-         {/* <div className="min-h-[100vh] h-[100vh] bg-white text-black items-center flex flex-col justify-center px-4  ">
-            <ul className=" list-none uppercase tracking-[-0px] xl:tracking-wide whitespace-normal leading-[120%]  sm:leading-[90%] inline-block indent-[0.2em] lpb text-2xl sm:text-5xl xl:text-5xl font-extrabold ">
-               <li className=" pl-4 sm:pl-11  ">Prosper Williams is a </li>
-               <li className="  ">developer</li>
-               <li className=" pl-4 sm:pl-11  ">dedicated to finding</li>
-               <li className="  ">strategic & engaging</li>
-               <li className="  ">creative solutions.</li>
-               <li className=" pl-4 sm:pl-11  ">curently based in</li>
-               <li className=" ">Akwa Ibom, Nigeria.</li>
-            </ul>
-         </div> */}
          <div className="min-h-[100vh] h-auto bg-[#0B1215] text-white items-center pb-8 m-0">
             <h2 className="text-white text-2xl sm:text-[3.5rem] lg:text-[9rem] text-center cinzel extrabold  tracking-tighter px-4 leading-[11rem] ">The Process</h2>
 
@@ -97,7 +87,7 @@ const Home = () => {
                })}
             </div>
          </div>
-         <div className=" bg-[#0B1215] min-h-[100vh] h-[100vh] m-0" id="work">
+         <div className=" bg-[#0B1215] min-h-[100vh] h-[101vh] m-0" id="work">
             <h2 className="cinzel text-left pl-4 sm:pl-20 font-bold capitalize text-1xl text-white py-4 border-b-[1px] border-white border-solid">Some of my works</h2>
             <ul className="list-non flex flex-col justify-center h-[98vh] cinzel">
                {Works.map((work) => {

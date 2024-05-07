@@ -26,12 +26,20 @@ const Nav = () => {
          window.removeEventListener("scroll", handleScroll);
       };
    }, []);
+
+   const handleLinkclick = () => {
+      if (Active) {
+         setActive(false);
+      } else {
+         setActive(false);
+      }
+   };
    return (
       <div className={`z-40 overflow-x-hidden ${Active ? "overflow-y-hidden" : "max-h-[100vh]"}`}>
          {/* <h1 className="hidden sm:block xl:hidden pl-5">Prosper Williams</h1> */}
          <div className="flex justify-end mr-34">
             <motion.button
-               className={`rubik tracking-tighter fixed text-white text-3xl font-bold mr-4 mt ${Scrolled1 ? "text-[#f83d0c]" : ""}`}
+               className={`sora tracking-tighter fixed text-white text-3xl font-bold mr-4 mt ${Scrolled1 ? "text-[#f83d0c]" : ""}`}
                onClick={handleclick}
                initial={{opacity: 0}}
                transition={{duration: 0.4}}
@@ -53,7 +61,7 @@ const Nav = () => {
                   return (
                      <div key={link.name} className="h-24 text-white flex flex-col justify-center overflow-hidden">
                         <motion.h1 initial={{y: 70, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: 1.4}}>
-                           <Link className="font-bold text-5xl sm:text-7xl" to={link.to}>
+                           <Link className="font-bold text-5xl sm:text-7xl" to={link.to} onClick={handleLinkclick}>
                               {link.name}
                            </Link>
                         </motion.h1>
@@ -89,17 +97,24 @@ const Nav = () => {
                <div className=" mt-[12rem] xl:mt-[12rem] float-left ml-14 flex flex-col items-start w-full text-gray-900">
                   <div className="overflow-y-hidden h-20 flex flex-col justify-center">
                      <motion.p className="font-bold text-5xl " initial={{y: 15, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{delay: 0.5, duration: 1.4}}>
-                        Instagram
+                        <a href="https://www.instagram.com/iam_pr0sper/" target="blank">
+                           Instagram
+                        </a>
                      </motion.p>
                   </div>
                   <div className="overflow-y-hidden first-line:h-20 flex flex-col justify-center">
                      <motion.p className="font-bold text-5xl" initial={{y: 15, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{delay: 0.5, duration: 1.4}}>
-                        IinkedIn
+                        <a href="https://www.linkedin.com/in/prosper-williams-com/" target="blank">
+                           {" "}
+                           IinkedIn
+                        </a>
                      </motion.p>
                   </div>
                   <div className="overflow-y-hidden h-20 flex flex-col justify-center">
                      <motion.p className="font-bold text-5xl" initial={{y: 15, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{delay: 0.5, duration: 1.4}}>
-                        Twitter
+                        <a href="https://twitter.com/PR0SPERCODES" target="blank">
+                           Twitter
+                        </a>
                      </motion.p>
                   </div>
                </div>
