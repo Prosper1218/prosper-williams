@@ -26,3 +26,24 @@ export const Process = [
       talk: "I'm here for the long haul, committed to developing long term relationships built on trust. I live by the mantra of measure twice, cut once, so by the time we reach handover, everything should look and feel just right. Rest assured that if anything does pop up, I'm dedicated to offering flexibility and providing assistance during and after the handover.",
    },
 ];
+
+export const services = [
+   {
+      id: 1,
+      servi: "ui/ux",
+      Tech: "Figma",
+      talk: "I'm here for the long haul, committed to developing long term relationships built on trust. I live by the mantra of measure twice, cut once, so by the time we reach handover, everything should look and feel just right. Rest assured .",
+   },
+   {
+      id: 2,
+      servi: "ui/ux",
+      Tech: "Figma",
+      talk: "I'm here for the long haul, committed to developing long term relationships built on trust. I live by the mantra of measure twice, cut once, so by the time we reach handover, everything should look and feel just right. Rest assured . nd feel just right. Rest assured nd feel just right. Rest assured ",
+   },
+   {
+      id: 3,
+      servi: "ui/ux",
+      Tech: "Figma",
+      talk: "I'm here for the long haul, committed to developing long term relationships built on trust. I live by the mantra of measure twice, cut once, so by the time we reach handover, everything should look and feel just right. Rest assured .",
+   },
+];

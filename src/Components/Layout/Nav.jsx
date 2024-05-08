@@ -5,7 +5,7 @@ import {useNavProvider} from "../../Util/NavBarProvider";
 
 const Nav = () => {
    const {Active, setActive} = useNavProvider();
-   const links = [{name: "Home", to: "/"}, {name: "About", to: "/About"}, {name: "Work", to: ""}, {name: "Contact"}, {name: "Services"}];
+   const links = [{name: "Home", to: "/"}, {name: "About", to: "/About"}, {name: "Work", to: ""}, {name: "Services", to:"/Services"}, {name: "Contact", to:'/Contact'}];
    const [Scrolled1, setScrolled1] = useState(false);
 
    const handleclick = () => {
@@ -21,7 +21,6 @@ const Nav = () => {
       };
 
       window.addEventListener("scroll", handleScroll);
-      // Clean up the event listener
       return () => {
          window.removeEventListener("scroll", handleScroll);
       };

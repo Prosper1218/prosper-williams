@@ -3,7 +3,8 @@ import {motion} from "framer-motion";
 import {useNavProvider} from "../../../Util/NavBarProvider";
 import {Link} from "react-router-dom";
 import {Process} from "../../../Data.jsx";
-import '../../../index.css'
+import "../../../index.css";
+import ReachOut from "../../../Components/ReachOut.jsx";
 
 const Works = [
    {
@@ -33,7 +34,7 @@ const Home = () => {
 
    return (
       <div className={`h-auto overflow-y-hidden ${Active ? " overflow-y-hidden max-h-[100vh]" : ""} overflow-x-hidden`}>
-         <motion.div className="min-h-[100vh] h-[100vh] flex flex-col justify-end bg-[#AA0000]" initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 2}}>
+         <motion.div className="min-h-[100vh] h-[100vh] flex flex-col justify-end bg-[#AA0000]" initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 3}}>
             <div className=" ">
                <motion.h2
                   className={`text-white text-4xl sm:text-6xl sora font-semibold sm:ml-20 tracking-tight block ml-8 z-20 h-56`}
@@ -106,38 +107,9 @@ const Home = () => {
          </div>
 
          {/*  */}
-         <div className="min-h-[80vh] h-[70vh] bg-white text-black ">
-            <section className="animation  mt-7 h-auto font-extrabold">
-               <div className="first  flex flex-col justify-center h-full">
-                  <h3 className="text-2xl cinzel font-bold px-4 sm:px-20 py-1">have a question?</h3>
-               </div>
-               <div className="second  flex flex-col justify-center h-full">
-                  <h3 className="text-2xl cinzel font-bold px-4 sm:px-20 py-1">keen to collaborate?</h3>
-               </div>
-               <div className="third  flex flex-col justify-center h-full">
-                  <h3 className="text-2xl cinzel font-bold px-4 sm:px-20 py-1 ">curious about costing?</h3>
-               </div>
-               <div className="third  flex flex-col justify-center h-full">
-                  <h3 className="text-2xl cinzel font-bold px-4 sm:px-20 py-1 ">feel like chatting?</h3>
-               </div>
-               <div className="third  flex flex-col justify-center h-full">
-                  <h3 className="text-2xl cinzel font-bold px-4 sm:px-20 py-1 ">want some advice?</h3>
-               </div>
-               <div className="third  flex flex-col justify-center h-full">
-                  <h3 className="text-2xl cinzel font-bold px-4 sm:px-20 py-1 ">project in mind?</h3>
-               </div>
-            </section>
-
-            <div className="h-full mt-4 flex flex-col justify-center">
-               <p className="font capitalize px-4 sm:px-16 text-[1.5rem] ">just say</p>
-               <a
-                  className="text-[1.8rem] sm:text-[2.5rem] md:text-[3rem] lg:text-[4.5rem] xl:text-[5.8rem] 2xl:text-[7rem] cursor-pointer  font-extrabold text-left px-4 sm:px-20 "
-                  href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsLPtkMkPrTWjrggBBtMMjbSZRfQbcpzmXQnNbGRtthpKCTjJFjcxgtpTBhmtXSPTCRzGzqg"
-                  target="blank"
-               >
-                  hello@<span className="text-gray-300 lilita">wprosper92@gmail.com</span>
-               </a>
-            </div>
+         <div className="">
+            {" "}
+            <ReachOut h={"h-[70vh]"} bg={"bg-white]"} Tcolor={"text-black"} />
          </div>
       </div>
    );
