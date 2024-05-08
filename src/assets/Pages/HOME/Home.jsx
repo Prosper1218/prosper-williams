@@ -32,7 +32,7 @@ const Home = () => {
    const {Active} = useNavProvider();
 
    return (
-      <div className={` ${Active ? " overflow-y-hidden max-h-[100vh]" : ""} overflow-x-hidden`}>
+      <div className={`h-auto overflow-y-hidden ${Active ? " overflow-y-hidden max-h-[100vh]" : ""} overflow-x-hidden`}>
          <motion.div className="min-h-[100vh] h-[100vh] flex flex-col justify-end bg-[#AA0000]" initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 2}}>
             <div className=" ">
                <motion.h2
