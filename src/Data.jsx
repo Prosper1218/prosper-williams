@@ -42,8 +42,8 @@ export const services = [
    },
    {
       id: 3,
-      servi: "ui/ux Designer",
-      Tech: "Figma",
+      servi: "App Developer",
+      Tech: "Flutter/React Native",
       talk: "I'm here for the long haul, committed to developing long term relationships built on trust. I live by the mantra of measure twice, cut once, so by the time we reach handover, everything should look .",
    },
 ];

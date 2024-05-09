@@ -3,8 +3,8 @@ import "../App.css";
 const ReachOut = ({bg, h, Tcolor, pt}) => {
    return (
       <div>
-         <div className={`min-h-[80vh] ${h} ${bg} ${Tcolor} ${pt} border `}>
-            <section className="animation h-auto font-extrabold border">
+         <div className={`min-h-[80vh] ${h} ${bg} ${Tcolor} ${pt}  `}>
+            <section className="animation h-auto font-extrabold ">
                <div className="first  flex flex-col justify-center h-full">
                   <h3 className="text-2xl cinzel font-bold px-4 sm:px-20 py-1">have a question?</h3>
                </div>
@@ -31,7 +31,6 @@ const ReachOut = ({bg, h, Tcolor, pt}) => {
                   className="text-[1.8rem] sm:text-[2.5rem]  md:text-[3rem] lg:text-[4.5rem] xl:text-[5.8rem] 2xl:text-[7rem] cursor-pointer  font-extrabold text-left px-4 sm:px-20 "
                   href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsLPtkMkPrTWjrggBBtMMjbSZRfQbcpzmXQnNbGRtthpKCTjJFjcxgtpTBhmtXSPTCRzGzqg"
                   target="blank"
-
                >
                   hello@<span className="text-gray-300 lilita">wprosper92@gmail.com</span>
                </a>

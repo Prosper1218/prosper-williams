@@ -28,14 +28,18 @@ const Services = () => {
             <div className="grid grid-cols-1 px-4 sm:grid-cols-3 gap-4 mt-12 mx-auto lg:max-w-[80%] xl:max-w-[70%] items-start">
                {services.map((info) => {
                   return (
-                     <div
+                     <motion.div
+                        initial={{opacity: 0, y: 70}}
+                        whileInView={{opacity: 1, y: 0}}
+                        transition={{duration: 2.3}}
+                        viewport={{once: "true"}}
                         className=" px-4 py-8 rounded-[9px] bg-[#aa0000de] shadow-[0px_4px_30px_rgba(35,35,35,0.1),_0px_8px_30px_rgba(35,35,35,0.1),_0px_8px_30px_rgba(35,35,35,0.1)]"
                         key={info.id}
                      >
                         <h4 className="text-[#cccccc] sora text-xl font-bold capitalize"> {info.servi}</h4>
                         <h5 className="text-[#0B1215] font text-sm font-semibold capitalize">{info.Tech}</h5>
                         <p className="text-[#cccccc] text-xs sora">{info.talk}</p>
-                     </div>
+                     </motion.div>
                   );
                })}
             </div>
