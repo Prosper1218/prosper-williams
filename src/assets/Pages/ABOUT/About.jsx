@@ -91,7 +91,7 @@ const About = () => {
             <br />
             <br />
             <br />
-            <button className="sora capitalize text-2xl sm:text-3xl border-[#cccccc] border-4 border-solid font-bold text-white mx-auto w-[11rem] sm:w-[20rem] py-6" onClick={()=>{navigate("/Contact")}}>
+            <button className="sora capitalize text-2xl sm:text-3xl border-[#cccccc] border-4 border-solid px-4 font-bold text-white mx-auto w-[11rem] sm:w-[20rem] py-6" onClick={()=>{navigate("/Contact")}}>
                Contact Me
             </button>
          </div>

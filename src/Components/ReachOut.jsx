@@ -1,9 +1,9 @@
 import React from "react";
 import "../App.css";
-const ReachOut = ({bg, h, Tcolor}) => {
+const ReachOut = ({bg, h, Tcolor, pt}) => {
    return (
       <div>
-         <div className={`min-h-[80vh] ${h} ${bg} ${Tcolor} `}>
+         <div className={`min-h-[80vh] ${h} ${bg} ${Tcolor} ${pt} `}>
             <section className="animation h-auto font-extrabold ">
                <div className="first  flex flex-col justify-center h-full">
                   <h3 className="text-2xl cinzel font-bold px-4 sm:px-20 py-1">have a question?</h3>

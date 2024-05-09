@@ -2,8 +2,10 @@ import {motion} from "framer-motion";
 import React from "react";
 import "../../../index.css";
 import {services} from "../../../Data";
+import {useNavigate} from "react-router-dom";
 
 const Services = () => {
+   const navigate = useNavigate();
    return (
       <div className="bg-black min-h-[100vh]">
          <motion.div className="bg-[#AA0000] min-h-[100vh] h-auto lg:h-[100vh] pb-8 " initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 3}}>
@@ -34,6 +36,16 @@ const Services = () => {
                      </div>
                   );
                })}
+            </div>
+            <div className="justify-center flex flex-row mt-12">
+               <button
+                  className="sora capitalize text-2xl sm:text-3xl border-[#cccccc] border-4 border-solid px-4 font-bold text-white mx-auto w-[11rem] sm:w-[20rem] py-6"
+                  onClick={() => {
+                     navigate("/Contact");
+                  }}
+               >
+                  Contact Me
+               </button>
             </div>
          </motion.div>
       </div>
