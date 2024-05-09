@@ -6,7 +6,7 @@ import {services} from "../../../Data";
 const Services = () => {
    return (
       <div className="bg-black min-h-[100vh]">
-         <motion.div className="bg-[#AA0000] min-h-[100vh] h-[100vh] " initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 3}}>
+         <motion.div className="bg-[#AA0000] min-h-[100vh] h-auto lg:h-[100vh] pb-8 " initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 3}}>
             <motion.h2
                className="sora text-left font-bold capitalize text-2xl py-4 md:text-4xl text-white px-4 pt-[7rem] overflow-y-hidden"
                initial={{opacity: 0}}
