@@ -183,6 +183,5 @@ body {
 .hel {
    /* filter: drop-shadow(2px 2px 4em #61dafbaa); */
    text-shadow: horizontal-offset vertical-offset blur-radius color;
-
 }
 

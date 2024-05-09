@@ -30,20 +30,20 @@ export const Process = [
 export const services = [
    {
       id: 1,
-      servi: "ui/ux",
+      servi: "ui/ux Designer",
       Tech: "Figma",
-      talk: "I'm here for the long haul, committed to developing long term relationships built on trust. I live by the mantra of measure twice, cut once, so by the time we reach handover, everything should look and feel just right. Rest assured .",
+      talk: "I'm here for the long haul, committed to developing long term relationships built on trust. I live by the mantra of measure twice, cut once, so by the time we reach handover, everything should look .",
    },
    {
       id: 2,
-      servi: "ui/ux",
-      Tech: "Figma",
-      talk: "I'm here for the long haul, committed to developing long term relationships built on trust. I live by the mantra of measure twice, cut once, so by the time we reach handover, everything should look and feel just right. Rest assured . nd feel just right. Rest assured nd feel just right. Rest assured ",
+      servi: "Web Developer",
+      Tech: "Javascript, React, Next.Js, Systeme.io",
+      talk: "I'm here for the long haul, committed to developing long term relationships built on trust. I live by the mantra of measure twice, cut once, so by the time we reach handover, everything should look and feel just right. Rest assured. ",
    },
    {
       id: 3,
-      servi: "ui/ux",
+      servi: "ui/ux Designer",
       Tech: "Figma",
-      talk: "I'm here for the long haul, committed to developing long term relationships built on trust. I live by the mantra of measure twice, cut once, so by the time we reach handover, everything should look and feel just right. Rest assured .",
+      talk: "I'm here for the long haul, committed to developing long term relationships built on trust. I live by the mantra of measure twice, cut once, so by the time we reach handover, everything should look .",
    },
 ];
