@@ -12,7 +12,7 @@ const Services = () => {
       <div className={`bg-black min-h-[100vh]  ${Active ? " overflow-y-hidden max-h-[100vh]" : ""}`}>
          <motion.div className="bg-[#AA0000] min-h-[100vh] h-auto lg:h-[100vh] pb-8 " initial={{opacity: 0}} animate={{opacity: 1}} transition={{duration: 3}}>
             <motion.h2
-               className="sora text-left font-bold capitalize text-2xl py-4 md:text-4xl text-white px-4 pt-[7rem] overflow-y-hidden"
+               className="sora text-left font-bold capitalize text-2xl py-4 md:text-4xl text-white px-4 sm:px-8 pt-[7rem] overflow-y-hidden"
                initial={{opacity: 0}}
                whileInView={{opacity: 1}}
                transition={{duration: 2.3}}
@@ -20,7 +20,7 @@ const Services = () => {
             >
                what i offer
             </motion.h2>
-            <p className="sora text-[#0B1215] font-bold pl-5 ">
+            <p className="sora text-[#0B1215] font-bold pl-5 sm:pl-9 ">
                I'm here to help you achieve your goals. <br />
                Whether you're seeking web development, design solutions, or strategic consulting. <br />
                You've come to the right place.
