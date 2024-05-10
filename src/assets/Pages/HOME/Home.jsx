@@ -42,8 +42,8 @@ const Home = () => {
                   animate={{y: 0, opacity: 1}}
                   transition={{duration: 1.5, delay: 0.5}}
                >
-                  Strategic, <br />
-                  Creative Solutions.
+                  Developing, <br />
+                  Your Visions &lt;/&gt;.
                </motion.h2>
             </div>
          </motion.div>
@@ -55,8 +55,7 @@ const Home = () => {
                whileInView={{opacity: 1, y: 0}}
                transition={{duration: 2.3}}
             >
-               truly great work <br />
-               requires strategy.
+               I'm Prosper Williams, <br />A Frontend Engineer
             </motion.h2>
          </div>
 
@@ -71,7 +70,7 @@ const Home = () => {
                <p className=" rotate-90 "> :)</p>
             </motion.h2>
          </div>
-         <div className="min-h-[100vh] h-auto bg-[#0B1215] text-white items-center pb-8 m-0">
+         <div className="min-h-[100vh] h-auto bg-[#0B1215] text-white items-center pb-8 m-0 outline-none border-none">
             <h2 className="text-white text-2xl sm:text-[3.5rem] lg:text-[9rem] text-center cinzel extrabold  tracking-tighter px-4 leading-[11rem] ">The Process</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 px-4 items-start gap-8 md:px-10 lg:px-20">
@@ -105,7 +104,18 @@ const Home = () => {
                })}
             </ul>
          </div>
-
+         <div className="min-h-[100vh] h-[100vh] bg-[#0B1215] text-white flex flex-col justify-center">
+            <motion.h2
+               className="sora text-center font-bold capitalize text-4xl md:text-7xl mx-4"
+               initial={{opacity: 0, y: 100}}
+               whileInView={{opacity: 1, y: 0}}
+               transition={{duration: 2.3}}
+            >
+               Now you see that......<br />
+               truly great work <br />
+               requires strategy.
+            </motion.h2>
+         </div>
          {/*  */}
          <div className="">
             {" "}

@@ -48,11 +48,11 @@ const Nav = () => {
             </motion.button>
          </div>
          <div
-            className={`absolute  top-0 bottom-0 right-0 left-0 grid grid-cols-1 md:grid-cols-2 bg-black nav ${
+            className={`absolute  top-0 bottom-0 right-0 left-0 grid grid-cols-1 md:grid-cols-2 bg-[#0B1215] nav ${
                Active ? "translate-x-0 opacity-100 h-[100vh] overflow-y-hidden" : "translate-x-[130rem] opacity-0 "
             } `}
          >
-            <button onClick={() => setActive(false)} className="text-3xl text-white  md:text-black float-right font-semibold fixed right-4 rubik tracking-tighter  pt-2">
+            <button onClick={() => setActive(false)} className="text-3xl text-[#cccccc]  md:text-black float-right font-semibold fixed right-4 rubik tracking-tighter  pt-2">
                close
             </button>
             <div className=" flex flex-col justify-center h-[100vh] gap-4 pl-10 lg:pl-14">
@@ -68,7 +68,7 @@ const Nav = () => {
                   );
                })}
             </div>
-            <div className=" hidden md:block bg-white text-black pr-14">
+            <div className=" hidden md:block bg-[#cccccc] text-[#0B1215] pr-14">
                <div className="mt-36 float-right flex flex-col items-end font">
                   <div className="overflow-y-hidden h-6 flex flex-col justify-center">
                      <motion.p className="text-sm font-medium " initial={{y: 15, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{duration: 1.4, delay: 0.5}}>

@@ -31,6 +31,7 @@ const ReachOut = ({bg, h, Tcolor, pt}) => {
                   className="text-[1.8rem] sm:text-[2.5rem]  md:text-[3rem] lg:text-[4.5rem] xl:text-[5.8rem] 2xl:text-[7rem] cursor-pointer  font-extrabold text-left px-4 sm:px-20 "
                   href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsLPtkMkPrTWjrggBBtMMjbSZRfQbcpzmXQnNbGRtthpKCTjJFjcxgtpTBhmtXSPTCRzGzqg"
                   target="blank"
+
                >
                   hello@<span className="text-gray-300 lilita">wprosper92@gmail.com</span>
                </a>
